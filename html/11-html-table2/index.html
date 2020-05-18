@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>11-html-table2</title>
+	</head>
+	<body>
+		<!-- przestarzały atrybut border -->
+		<table border="1">
+			<thead>
+				<tr>
+					<th scope="col">Kolumna 1</th>
+					<th scope="col" colspan="2">Kolumna 2</th>
+				</tr>
+			</thead>
+
+			<tr>
+				<td>wiersz 1</td>
+				<td rowspan="2">wiersz 2</td>
+				<td>wiersz 3</td>
+			</tr>
+			<tr>
+				<td>wiersz 4</td>
+				<td>wiersz 5</td>
+			</tr>
+			<tr>
+				<td>wiersz 6</td>
+				<td>wiersz 7</td>
+				<td>wiersz 8</td>
+			</tr>
+		</table>
+	</body>
+</html>

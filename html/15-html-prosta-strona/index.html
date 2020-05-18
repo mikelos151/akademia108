@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>15-html-prosta-strona</title>
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="#about-us">About us</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#portfolio">Portfolio</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section id="about-us">
+    <h2>About us</h2>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum fugiat soluta dicta alias atque architecto sit quod velit nulla eveniet.</p>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="skill">
+      <h2>Skill 1</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, sequi.</p>
+    </div>
+    <div class="skill">
+      <h2>Skill 2</h2>
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio.</p>
+    </div>
+    <div class="skill">
+      <h2>Skill 3</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    </div>
+    <div class="skill">
+      <h2>Skill 4</h2>
+      <p>Lorem ipsum dolor sit amet consectetur.</p>
+    </div>
+  </section>
+
+  <section id="portfolio">
+    <h2>portfolio</h2>
+    <div class="portfolio-item"><img src="img/css3.png" alt="css3"></div>
+    <div class="portfolio-item"><img src="img/git.png" alt="git"></div>
+    <div class="portfolio-item"><img src="img/grunt.png" alt="grunt"></div>
+  </section>
+
+  <section id="contact">
+    <h2>Adam Kowalski</h2>
+    <address>
+      <a href="mailto:adam@adam.pl">adam@adam.pl</a>
+      <a href="tel:+48666666666">666-666-666</a>
+    </address>
+    <form action="#" method="POST">
+      <label>imię: <input type="text" name="name" required autocomplete="given-name"></label><br>
+      <label>temat:<input type="text" name="subject" required autocomplete="family-name"></label><br>
+      <label>wiadomość:<textarea name="message" cols="30" rows="10" required></textarea></label><br>
+      <input type="submit" value="Wyślij">
+    </form>
+  </section>
+</body>
+</html>
