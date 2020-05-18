@@ -1,0 +1,16 @@
+div {
+  background-color: black;  
+  width:100px;
+  height: 100px;
+  margin:5px;
+}
+div:nth-child(2){
+ opacity: 0.75;
+}
+div:nth-child(3){
+  opacity: 0.5;
+ }
+ div:nth-child(4){
+  opacity: 0.25;
+ }
+
