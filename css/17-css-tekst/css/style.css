@@ -1,0 +1,14 @@
+section {
+  text-align: center;
+}
+section>h1 {
+  color: blue;;
+  font-size: 45px;;
+}
+section p {
+ font-size: 30px;
+ padding:25px;
+}
+section span {
+  color:red;
+}
