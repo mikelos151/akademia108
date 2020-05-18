@@ -1,0 +1,16 @@
+section {
+  background-color: rgba(255, 182, 193, 0.438);
+  padding:10px;
+}
+section h1 {
+  color:red;
+  font-size: 30px;;
+}
+p {
+  color:blue;
+  font-size: 25px;
+  margin:50px 0px;
+}
+h1 + p {
+  color:brown;
+}
