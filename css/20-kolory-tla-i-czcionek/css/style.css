@@ -1,0 +1,19 @@
+body {
+  background-color: silver;
+}
+
+section > ul > li:nth-child(1){
+  background-color: grey;
+}
+section > ul > li:nth-child(2){
+  background-color: rebeccapurple;
+}
+section > ul > li:nth-child(3){
+  background-color: red;
+}
+section > ul > li:nth-child(4){
+  background-color: green;
+}
+section > ul > li:nth-child(5){
+  background-color: orange;
+}
