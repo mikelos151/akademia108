@@ -1,0 +1,8 @@
+div {
+  width:400px;
+  height: 400px;
+  background-image: url(../img/pic.jpg);
+  background-repeat: no-repeat;
+  background-size: 50%;
+  border: 1px solid rgb(224, 224, 224);;
+}
