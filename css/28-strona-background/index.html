@@ -7,6 +7,41 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  
+  <nav>
+    <ul>
+      <li><a href="#portfolio">Portfolio</a> </li>
+      <li><a href="#o-mnie">O mnie</a> </li>
+      <li><a href="#kontakt">Kontakt</a> </li>
+    </ul>
+  </nav>
+
+  <header>
+    <h1>Front End Developer</h1>
+  </header>
+
+  <section id="o-mnie">
+    <h2>o mnie</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi magnam minus iure quidem recusandae voluptates cum necessitatibus, quos ipsa commodi ipsam harum cupiditate eaque nam, vitae voluptatum blanditiis officiis perferendis.</p>
+  </section>
+
+  <section id="portfolio">
+    <h2>Portfolio</h2>
+    <div>
+      <img src="img/css3.png" alt="css">
+      <img src="img/git.png" alt="git">
+      <img src="img/grunt.png" alt="grunt">
+    </div>
+  </section>
+
+  <section id="kontakt">
+    <h2>Kontakt</h2>
+      <form action="POST">
+        <label>Imię: <input type="text" autocomplete="given-name"></label><br>
+        <label>Nazwisko: <input type="text" autocomplete="family-name"></label><br>
+        <label>E-mail: <input type="email" autocomplete="email"></label><br>
+        <label><textarea name="message"  cols="30" rows="10"></textarea></label><br>
+        <input type="submit" value="Wyślij">
+      </form>
+  </section>
 </body>
 </html>

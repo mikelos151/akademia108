@@ -1,0 +1,15 @@
+header  {
+  text-align: center;
+  background-image: url(../img/baner.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-x: 50%;
+  height: 500px;;
+}
+nav ul > li{
+  display: inline-block;
+}
+
+#o-mnie {
+  text-align: center;
+}
