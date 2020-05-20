@@ -3,9 +3,24 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Document</title>
+		<title>JS</title>
+		<link rel="stylesheet" href="css/style.css">
 	</head>
 	<body>
+		<form>
+			<label><span>Imię:</span> <input type="text" id="input-name"></label><br>
+			<label><span>Nazwisko:</span>  <input type="text" id="input-surname"></label><br>
+			<label><span>Telefon:</span>  <input type="tel" id="input-phone"></label><br>
+		</form>
+
+		<button>Wyświetl dane</button>
+			<div id="container">
+    		<p>Dane:</p>
+    		<p id="name"></p>
+    		<p id="surname"></p>
+    		<p id="phone"></p>
+			</div>
+
 		<script src="js/main.js"></script>
 	</body>
 </html>

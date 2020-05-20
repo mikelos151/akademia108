@@ -4,4 +4,4 @@ function arrayOperation(arr) {
   console.log(arr[0]);  
 }
 
-arrayOperation(array)
+arrayOperation(array);
