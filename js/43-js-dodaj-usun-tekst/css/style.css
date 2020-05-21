@@ -11,5 +11,5 @@ button {
   cursor: pointer;
 }
 button+button {
-  background-color: red;;
+  background-color: red;
 }
