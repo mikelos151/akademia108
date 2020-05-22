@@ -129,6 +129,21 @@ const fruits = [
 	// "Kumquat",
 	// "Leeks",
 ];
+const ulFruits = document.querySelector("#ulFruits");
+
+const lblFruits = document.querySelector("#selectedItemFruits");
+const ulColors = document.querySelector("#ulColors");
+const lblColors = document.querySelector("#selectedItemColors");
+
+lblFruits.addEventListener('click', function () {
+	ulFruits.classList.toggle("hide");
+	ulColors.classList.add("hide");
+});
+lblColors.addEventListener('click', function () {
+	ulColors.classList.toggle("hide");
+	ulFruits.classList.add("hide");
+});
+
 
 function buildFormField(arr, parentElement, createdElement) {
 	const pElement = document.querySelector(parentElement);
@@ -146,16 +161,40 @@ function buildFormField(arr, parentElement, createdElement) {
 	}
 }
 
-function addListenerToLi(arr) {
-	let liElement = document.querySelectorAll("#ulFruits>li");
-	let selectElement = document.querySelectorAll("#fruits>option");
+function addListenerToLi(arr, type) {
+	let liElement, selectElement;
+	if (type === "fruits") {
+		console.log("Fff");
+		liElement = document.querySelectorAll("#ulFruits>li");
+		selectElement = document.querySelectorAll("#fruits>option");
 
-	for (let x = 0; x < arr.length; x++) {
-		console.log(liElement[x]);
-		liElement[x].addEventListener("click", function (e) {
-			selectElement[0].value = liElement[x].textContent;
-		});
+		for (let x = 0; x < arr.length; x++) {
+			console.log(liElement[x]);
+			liElement[x].addEventListener("click", function (e) {
+				console.log(liElement[x].textContent);
+				selectElement[0].value = liElement[x].textContent;
+				lblFruits.textContent = liElement[x].textContent;
+				ulFruits.classList.toggle("hide");
+			});
+		}
+	} else
+	if (type === "colors") {
+		console.log("cc");
+		liElement = document.querySelectorAll("#ulColors>li");
+		selectElement = document.querySelectorAll("#colors>option");
+		for (let x = 0; x < arr.length; x++) {
+			console.log(liElement[x]);
+			liElement[x].addEventListener("click", function (e) {
+				console.log(liElement[x].textContent);
+				selectElement[0].value = liElement[x].textContent;
+				lblColors.textContent = liElement[x].textContent;
+				ulColors.classList.toggle("hide");
+			});
+		}
 	}
+
+
+
 }
 
 document.querySelector("button").addEventListener("click", function (e) {
@@ -163,11 +202,13 @@ document.querySelector("button").addEventListener("click", function (e) {
 	console.log(document.querySelector("#fruits").value);
 });
 // buildFormField(countries, "#countries", "option");
-// buildFormField(colors, "#colors", "option");
-buildFormField(fruits, "#fruits", "option");
+buildFormField(colors, "#colors", "option");
+buildFormField(colors, "#ulColors", "li");
 
-// buildFormField(countries, "#ulCountries", "li");
-// buildFormField(colors, "#ulColors", "li");
+buildFormField(fruits, "#fruits", "option");
 buildFormField(fruits, "#ulFruits", "li");
 
-addListenerToLi(fruits);
+// buildFormField(countries, "#ulCountries", "li");
+
+addListenerToLi(fruits, "fruits");
+addListenerToLi(colors, "colors");

@@ -1,33 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Formularz</title>
-		<link rel="stylesheet" href="css/style.css" />
-	</head>
-	<body>
-		<form action="">
-			<label>
-				Wybierz państwo:
-				<select name="countries" id="countries"></select>
-				<ul id="ulCountries"></ul>
-			</label>
 
-			<label>
-				Wybierz kolor:
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Formularz</title>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+	<form action="">
+		<!-- <label>
+			Wybierz państwo:
+			<select name="countries" id="countries"></select>
+			<ul id="ulCountries"></ul>
+		</label> -->
+		<div id="fieldset">
+			<span class="label">Kolor: </span>
+			<div id="lblColors">
 				<select name="colors" id="colors"></select>
-				<ul id="ulColors"></ul>
-			</label>
+				<span id="selectedItemColors">-- Wybierz kolor --</span>
+				<ul id="ulColors" class="hide"></ul>
+			</div>
+		</div>
 
-			<label>
-				Wybierz owoc:
+		<div id="fieldset">
+			<span class="label">Owoc: </span>
+			<div id="lblFruits">
 				<select name="fruits" id="fruits"></select>
-				<ul id="ulFruits"></ul>
-			</label>
+				<span id="selectedItemFruits">-- Wybierz owoc --</span>
+				<ul id="ulFruits" class="hide"></ul>
+			</div>
+		</div>
 
-			<button type="submit">OK</button>
-		</form>
-		<script src="js/main.js"></script>
-	</body>
+		<button type="submit">OK</button>
+	</form>
+	<script src="js/main.js"></script>
+</body>
+
 </html>
