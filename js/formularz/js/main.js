@@ -1,32 +1,3 @@
-const countries = [
-	"Austria",
-	"Belgium",
-	"Bulgaria",
-	"Croatia",
-	"Cyprus",
-	"Czech Republic",
-	"Denmark",
-	"Estonia",
-	"Finland",
-	"France",
-	"Germany",
-	"Greece",
-	"Hungary",
-	"Ireland",
-	"Italy",
-	"Latvia",
-	"Lithuania",
-	"Luxembourg",
-	"Malta",
-	"Netherlands",
-	"Poland",
-	"Portugal",
-	"Romania ",
-	"Slovakia",
-	"Slovenia",
-	"Spain",
-	"Sweden",
-];
 const colors = [
 	"White",
 	"Yellow",
@@ -130,7 +101,6 @@ const fruits = [
 	// "Leeks",
 ];
 const ulFruits = document.querySelector("#ulFruits");
-
 const lblFruits = document.querySelector("#selectedItemFruits");
 const ulColors = document.querySelector("#ulColors");
 const lblColors = document.querySelector("#selectedItemColors");
@@ -144,7 +114,7 @@ lblColors.addEventListener('click', function () {
 	ulFruits.classList.add("hide");
 });
 
-
+// napełniaj listę i selecty danymi z tablicy
 function buildFormField(arr, parentElement, createdElement) {
 	const pElement = document.querySelector(parentElement);
 
