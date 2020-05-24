@@ -104,12 +104,16 @@ const ulFruits = document.querySelector("#ulFruits");
 const lblFruits = document.querySelector("#selectedItemFruits");
 const ulColors = document.querySelector("#ulColors");
 const lblColors = document.querySelector("#selectedItemColors");
+const selectFruits = document.querySelector("#fruits");
+const selectColors = document.querySelector("#colors");
 
-lblFruits.addEventListener('click', function () {
+const result = document.querySelector("#result>p");
+
+lblFruits.addEventListener("click", function () {
 	ulFruits.classList.toggle("hide");
 	ulColors.classList.add("hide");
 });
-lblColors.addEventListener('click', function () {
+lblColors.addEventListener("click", function () {
 	ulColors.classList.toggle("hide");
 	ulFruits.classList.add("hide");
 });
@@ -120,35 +124,28 @@ function buildFormField(arr, parentElement, createdElement) {
 
 	for (let x = 0; x < arr.length; x++) {
 		let option = document.createElement(createdElement);
-		if (parentElement === "select") {
-			option.text = arr[x];
-			option.value = arr[x];
-		} else {
+		{
 			let textNode = document.createTextNode(arr[x]);
 			option.appendChild(textNode);
+			option.value = arr[x];
 		}
 		pElement.appendChild(option);
 	}
 }
-
 function addListenerToLi(arr, type) {
 	let liElement, selectElement;
 	if (type === "fruits") {
-		console.log("Fff");
 		liElement = document.querySelectorAll("#ulFruits>li");
 		selectElement = document.querySelectorAll("#fruits>option");
 
 		for (let x = 0; x < arr.length; x++) {
-			console.log(liElement[x]);
 			liElement[x].addEventListener("click", function (e) {
-				console.log(liElement[x].textContent);
 				selectElement[0].value = liElement[x].textContent;
 				lblFruits.textContent = liElement[x].textContent;
 				ulFruits.classList.toggle("hide");
 			});
 		}
-	} else
-	if (type === "colors") {
+	} else if (type === "colors") {
 		console.log("cc");
 		liElement = document.querySelectorAll("#ulColors>li");
 		selectElement = document.querySelectorAll("#colors>option");
@@ -162,23 +159,20 @@ function addListenerToLi(arr, type) {
 			});
 		}
 	}
-
-
-
 }
 
 document.querySelector("button").addEventListener("click", function (e) {
 	e.preventDefault();
+	result.textContent = selectColors.value + " - " + selectFruits.value;
+
 	console.log(document.querySelector("#fruits").value);
 });
-// buildFormField(countries, "#countries", "option");
+
 buildFormField(colors, "#colors", "option");
 buildFormField(colors, "#ulColors", "li");
 
 buildFormField(fruits, "#fruits", "option");
 buildFormField(fruits, "#ulFruits", "li");
-
-// buildFormField(countries, "#ulCountries", "li");
 
 addListenerToLi(fruits, "fruits");
 addListenerToLi(colors, "colors");
