@@ -6,9 +6,6 @@ const ul = document.querySelectorAll("ul");
 const result = document.querySelector("#form-data")
 const btnSubmit = document.querySelector("button[type=submit]");
 const spanSelectedItem = document.querySelectorAll(".selectedItem");
-// const li = document.querySelector("select>ul>li");
-
-// console.log(ul);
 
 for (let x = 0; x < ul.length; x++) {
     let li = ul[x].querySelectorAll("li");
