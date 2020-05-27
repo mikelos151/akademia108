@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML5</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <form action="https://formspree.io/xqkypygl" method="POST">
+        <label><span>Imię</span><input type="text" name="name" autocomplete="given-name"></label>
+        <label><span>Nazwisko</span><input type="text" name="surname" autocomplete="family-name"></label>
+        <label><span>Telefon</span><input type="tel" name="phone" autocomplete="tel"></label>
+        <label>
+					<span>Miasto </span>
+					<select name="city" id="select-city">
+						<option value="Kraków">Kraków</option>
+						<option value="Warszawa">Warszawa</option>
+						<option value="Gdańsk">Gdańsk</option>
+					</select>
+				</label>
+        <div>
+            <span>Płeć</span>
+            <label> <input type="radio" name="sex" id="male" value="mężczyzna">Mężczyzna</label>
+            <label><input type="radio" name="sex" id="female" value="kobieta">Kobieta</label>
+        </div>
+        <textarea name="message" cols="30" rows="10"></textarea>
+        <label id="label-rodo"><span> Zgoda na dane osobowe<input type="checkbox" name="rodo"></span></label>
+        <button>Wyślij</button>
+    </form>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

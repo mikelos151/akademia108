@@ -1,0 +1,71 @@
+body {
+    box-sizing: border-box;
+    background-color: rgba(0, 0, 0, 0.952);
+}
+
+form {
+    position: relative;
+    margin: 50px auto;
+    width: 300px;
+    padding: 20px 30px 80px;
+    border-radius: 7px;
+    background-color: rgba(255, 255, 255, 0.952);
+}
+
+form>label,
+form>#radio {
+    display: flex;
+    margin-top: 10px;
+}
+
+form span {
+    min-width: 70px;
+    /* font-size: 11px; */
+    font-weight: 600;
+    margin: 4px;
+}
+
+form div {
+    display: flex;
+    margin-top: 10px;
+}
+
+input[type=text],
+input[type=tel],
+textarea {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+textarea {
+    margin-top: 10px;
+}
+
+#select-city {
+    width: 100%;
+}
+
+#label-rodo {
+    justify-content: flex-start;
+    user-select: none;
+}
+
+form>button {
+    position: absolute;
+    padding: 5px 10px;
+    background-color: orangered;
+    color: #fff;
+    border: 0;
+    border-radius: 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+    width: 80px;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 30px;
+}
+
+form>button:hover {
+    background-color: rgb(209, 56, 0);
+}
