@@ -26,6 +26,30 @@ label[for="agreement"] {
   display: inline-block;
 }
 
+input,
+textarea,
+select {
+  background-color: #2b4a64;
+  color: #fff;
+  border: 1px solid #2b4a64;
+  padding: 5px;
+  width: 50%;
+  margin-bottom: 10px;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  background-color: #4e708c;
+  border: 1px solid #fff;
+  color: #ffffff;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  width: auto;
+}
+
 input[type="submit"] {
   background-color: #1ac056;
   color: #ffffff;
@@ -37,28 +61,4 @@ input[type="submit"] {
 
 input[type="submit"]:hover {
   background-color: #46e881;
-}
-
-input:focus,
-textarea:focus,
-select:focus {
-  border: 1px solid #fff;
-  color: #ffffff;
-  background-color: #4e708c;
-}
-
-input,
-textarea,
-select {
-  background-color: #2b4a64;
-  border: 1px solid #2b4a64;
-  padding: 5px;
-  width: 50%;
-  color: #fff;
-  margin-bottom: 10px;
-}
-
-input[type="radio"],
-input[type="checkbox"] {
-  width: auto;
 }
