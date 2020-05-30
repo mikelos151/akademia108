@@ -1,0 +1,64 @@
+/* tło: #213b50
+pole nieaktywne: #2b4a64
+pole aktywne: #4e708c
+-ramka aktywnego pola i kolor tekstu: #ffffff
+-kolor przycisku wysyłania: #1ac056
+-kolor przycisku wysyłania po najechaniu kursorem: #46e881 */
+
+/* body {
+  background-color: #213b50;
+} */
+
+form {
+  width: 50%;
+  background-color: #213b50;
+  color: #ffffff;
+  padding: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 3px;
+}
+
+label[for*="male"],
+label[for="agreement"] {
+  display: inline-block;
+}
+
+input[type="submit"] {
+  background-color: #1ac056;
+  color: #ffffff;
+  text-transform: uppercase;
+  padding: 10px 20px;
+  width: auto;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #46e881;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  border: 1px solid #fff;
+  color: #ffffff;
+  background-color: #4e708c;
+}
+
+input,
+textarea,
+select {
+  background-color: #2b4a64;
+  border: 1px solid #2b4a64;
+  padding: 5px;
+  width: 50%;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  width: auto;
+}
