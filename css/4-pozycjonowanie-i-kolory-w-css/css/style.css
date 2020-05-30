@@ -1,0 +1,76 @@
+* {
+  box-sizing: border-box;
+}
+
+#container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 600px;
+  margin: 50px auto;
+}
+
+.box {
+  width: 200px;
+  height: 200px;
+  border: 3px solid rgb(255, 255, 255);
+  position: relative;
+}
+
+.box>div {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 50%;
+  height: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  border: 1px solid rgb(0, 0, 0);
+}
+
+.box:nth-child(1)>div,
+.box:nth-child(9) {
+  background-color: rgb(0, 0, 0);
+}
+
+.box:nth-child(2)>div,
+.box:nth-child(8) {
+  background-color: rgb(100, 50, 50);
+}
+
+.box:nth-child(3)>div,
+.box:nth-child(7) {
+  background-color: rgb(5, 255, 100);
+}
+
+.box:nth-child(4)>div,
+.box:nth-child(6) {
+  background-color: rgb(255, 200, 50);
+}
+
+.box:nth-child(5)>div {
+  background-color: rgb(25, 150, 100);
+}
+
+.box:nth-child(5) {
+  background-color: rgb(44, 25, 150);
+}
+
+.box:nth-child(6)>div,
+.box:nth-child(4) {
+  background-color: rgb(255, 50, 50);
+}
+
+.box:nth-child(7)>div,
+.box:nth-child(3) {
+  background-color: rgb(102, 102, 0);
+}
+
+.box:nth-child(8)>div,
+.box:nth-child(2) {
+  background-color: rgb(255, 0, 0);
+}
+
+.box:nth-child(9)>div,
+.box:nth-child(1) {
+  background-color: rgb(14, 168, 0);
+}
