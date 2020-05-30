@@ -1,0 +1,38 @@
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+div {
+  width: 150px;
+  height: 150px;
+  margin: 10px;
+  transition: all 0.4s ease-in;
+}
+
+div:nth-child(1) {
+  background-color: coral;
+}
+
+div:nth-child(2) {
+  background-color: cornflowerblue;
+}
+
+div:nth-child(3) {
+  background-color: rgb(19, 52, 151);
+}
+
+div:hover:nth-child(1) {
+  width: 300px;
+}
+
+div:hover:nth-child(2) {
+  height: 300px;
+}
+
+div:hover:nth-child(3) {
+  height: 300px;
+  width: 300px;
+}
