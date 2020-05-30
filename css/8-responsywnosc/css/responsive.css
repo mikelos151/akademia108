@@ -20,7 +20,7 @@ h2 {
 
 figure {
   display: inline-block;
-  width: 30%;
+  width: 33%;
   margin: 0;
   margin-bottom: 1%;
 }
@@ -34,15 +34,10 @@ figure img {
   border: 2px solid #444;
 }
 
-@media screen and (min-width:992px) {
-  figure {
-    width: 30%;
-  }
-}
 
-@media screen and (min-width:768px) and (max-width:992px) {
+@media screen and (max-width:992px) {
   figure {
-    width: 45%;
+    width: 49%;
   }
 }
 
@@ -53,7 +48,7 @@ figure img {
 }
 
 @media screen and (max-width:480px) {
-  figure {
+  #gallery {
     width: 100%;
   }
 }
