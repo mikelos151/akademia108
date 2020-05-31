@@ -1,7 +1,3 @@
-* {
-  box-sizing: border-box;
-}
-
 body {
   margin: 0;
   padding: 0;
@@ -41,10 +37,10 @@ section {
 }
 
 #main {
+  flex-grow: 1;
   width: 100%;
   background-color: mediumaquamarine;
   display: flex;
-  flex-grow: 1;
 }
 
 @media screen and (max-width:992px) {
