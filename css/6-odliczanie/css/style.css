@@ -1,14 +1,9 @@
-body {
-  font-size: 5em;
-
-}
-
 div {
+  font-size: 4em;
   background-color: black;
   color: #fff;
-  width: 200px;
+  width: 450px;
   height: 100px;
-  /* letter-spacing: 100px; */
   overflow: hidden;
   text-align: center;
 }
@@ -17,27 +12,14 @@ ul {
   list-style: none;
   margin: 0;
   padding: 0;
-  animation-iteration-count: 1;
-  animation: show 1s step-end 10s, counting 10s step-end;
+  animation: counting 11s step-start;
 }
 
 ul li {
   line-height: 100px;
 }
 
-@keyframes show {
-  0% {
-    margin-top: -1100px;
-  }
-
-  100% {
-    margin-top: -1100px;
-  }
-}
-
 @keyframes counting {
-
-
   0% {
     margin-top: 0px;
   }
@@ -78,7 +60,11 @@ ul li {
     margin-top: -900px
   }
 
-  100% {
+  99.99% {
     margin-top: -1000px
+  }
+
+  100% {
+    margin-top: -1200px
   }
 }
