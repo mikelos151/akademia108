@@ -17,10 +17,9 @@
       <h1>front end developer</h1>
       <hr>
       <p>
-        HTML<span>•</span>CSS<span>•</span>
-        JavaScript
+        HTML<span>•</span>CSS<span>•</span>JavaScript
       </p>
-      <a href="#">Dowiedz się więcej</a>
+      <a href="#" class="btn">Dowiedz się więcej</a>
     </div>
   </header>
 
@@ -28,7 +27,7 @@
     <ul>
       <li><a href="#about">o mnie</a></li>
       <li><a href="#portfolio">portfolio</a></li>
-      <li><a href="#kontakt" class="btn">kontakt</a></li>
+      <li><a href="#kontakt">kontakt</a></li>
     </ul>
   </nav>
 
@@ -40,7 +39,9 @@
       </header>
       <img src="img/about.jpg" alt="Adam Kowalski">
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis delectus fugit a? Velit nam iusto cupiditate
-        enim ipsa praesentium officia!</p>
+        enim ipsa praesentium Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam, sunt. Impedit in officia
+        ipsum omnis, animi cumque deleniti quae magni labore ex non dolore aperiam, excepturi, optio quasi? Nemo, velit?
+      </p>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis delectus fugit a? Velit nam iusto cupiditate
         enim ipsa praesentium officia!</p>
       <a href="#" class="btn">Moje portfolio</a>
@@ -105,21 +106,31 @@
   </section>
 
   <section id="kontakt">
-    <header>
-      <h2>Kontakt</h2>
-      <hr>
-    </header>
-    <form>
-      <input type="text" placeholder="Imię" name="name">
-      <input type="email" placeholder="email" name="mail">
-      <textarea name="message" placeholder="Wiadomość"></textarea>
-      <button type="submit" class="btn"></button>
-    </form>
+    <div class="container">
+
+      <header>
+        <h2>Kontakt</h2>
+        <hr>
+      </header>
+      <form>
+        <input type="text" placeholder="Imię" name="name">
+        <input type="email" placeholder="email" name="mail">
+        <textarea name="message" placeholder="Wiadomość"></textarea>
+        <button type="submit" class="btn">Wyślij wiadomość</button>
+      </form>
+
+      <div class="social-links">
+        <a href="" class="social-link"><i class="fab fa-facebook-square"></i></a>
+        <a href="" class="social-link"><i class="fab fa-twitter"></i></a>
+        <a href="" class="social-link"><i class="fab fa-instagram"></i></a>
+        <a href="" class="social-link"><i class="fab fa-youtube"></i></a>
+      </div>
+    </div>
   </section>
 
   <footer>
     <div class="container">
-      Copyright &copy; Akaqdemia 108
+      Copyright &copy; Projekt testowy - portfolio
     </div>
   </footer>
 </body>
