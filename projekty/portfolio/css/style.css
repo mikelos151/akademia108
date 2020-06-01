@@ -52,6 +52,11 @@ section header h2 {
   margin: 0 auto;
 }
 
+label[for="menu"],
+input[id="menu"] {
+  display: none;
+}
+
 /* header */
 #main-header {
   display: flex;
@@ -85,8 +90,11 @@ section header h2 {
 }
 
 /* Navigation */
-#main-menu ul {
+#main-menu {
   background-color: #007bff;
+}
+
+#main-menu ul {
   list-style-type: none;
   text-align: center;
   margin: 0;
@@ -224,3 +232,73 @@ footer {
 }
 
 /* Responsive */
+@media screen and (max-width:1200px) {
+  .container {
+    max-width: 992px;
+  }
+}
+
+@media screen and (max-width:992px) {
+  .container {
+    max-width: 768px;
+  }
+
+  #portfolio #portfolio-wrapper .portfolio-item {
+    flex-basis: 50%;
+  }
+}
+
+@media screen and (max-width:768px) {
+  .container {
+    max-width: 95%;
+  }
+
+  #portfolio #portfolio-wrapper .portfolio-item {
+    flex-basis: 100%;
+  }
+}
+
+@media screen and (max-width:480px) {
+  #main-header #main-header-content h1 {
+    font-size: 3em;
+  }
+
+  .container {
+    max-width: 992px;
+  }
+
+  #about img {
+    width: 200px;
+    height: 200px;
+  }
+
+  #kontakt input[type="text"],
+  #kontakt input[type="email"] {
+    flex-basis: 100%;
+  }
+
+  /* menu */
+  label[for="menu"] {
+    display: block;
+    padding: 14px 20px;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 1.5em;
+    text-align: right;
+    cursor: pointer;
+  }
+
+  #main-menu ul {
+    display: none;
+  }
+
+  #main-menu input[id="menu"]:checked+ul {
+    display: block;
+  }
+
+  #main-menu ul li {
+    display: block;
+    text-align: right;
+    margin: 0
+  }
+}

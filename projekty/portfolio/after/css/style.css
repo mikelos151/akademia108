@@ -52,6 +52,11 @@ section {
     margin: 0 auto;
 }
 
+label[for="menu"],
+input[id="menu"] {
+    display: none;
+}
+
 /* Header styles */
 
 .main-header {
@@ -274,7 +279,7 @@ label[for="drop-nav"] {
         font-size: 3em;
     }
 
-    .about .about-img  {
+    .about .about-img {
         max-height: 200px;
         max-width: 200px;
     }
@@ -299,7 +304,7 @@ label[for="drop-nav"] {
         display: none;
     }
 
-    #drop-nav:checked + ul {
+    #drop-nav:checked+ul {
         display: block;
     }
 
