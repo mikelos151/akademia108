@@ -5,20 +5,24 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HTML5</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
   <!-- top -->
   <header>
-    <img src="logo.png" alt="www.strona.pl">
-    <div id="shop">
+    <a href="#"><img src="logo.png" alt="www.strona.pl"></a>
+
+    <nav>
       <a href="#">View Cart</a>
       <a href="#">Order History</a>
-      <form>
-        <input type="text" name="search">
-        <!-- <button type="submit">Search</button> -->
-      </form>
-    </div>
+    </nav>
+    <form>
+      <input type="text" name="search">
+      <button type="submit" class="searchButton">
+        <i class="fa fa-search"></i>
+      </button>
+    </form>
 
     <nav id="nav-first">
       <ul>
@@ -36,6 +40,8 @@
 
   <!-- baner -->
   <section id="baner">
+    <!-- znacznik h2 do ewentualnego ukrycia w css -->
+    <h1>baner</h1>
     <nav id="nav-second">
       <ul>
         <li><a href="#">Rainfall sensors</a></li>
