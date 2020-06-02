@@ -141,20 +141,35 @@ header svg {
   background-position: center 20%;
   background-repeat: no-repeat;
   background-size: cover;
+  color: #fff;
+  padding: 0
 }
 
 #modules #modules-wrapper {
   display: flex;
+  justify-content: space-evenly;
+
+
 }
 
 #modules-wrapper .modules-item {
+  margin-top: -50px;
   width: 30%;
-  border: 10px solid rgb(0, 9, 128)
+  z-index: 1;
+}
+
+#modules-wrapper .modules-item img {
+  width: 80%;
+  height: 300px;
+}
+
+#modules-wrapper .modules-item:nth-of-type(even) img {
+  margin-top: 50px;
 }
 
 #modules svg {
   position: absolute;
-  top: -260px;
+  top: -275px;
   left: 0;
   height: 1000px;
   width: 100%;
