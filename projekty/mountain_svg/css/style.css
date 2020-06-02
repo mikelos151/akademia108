@@ -134,10 +134,13 @@ header svg {
 /* modules */
 
 #modules {
-  /* height: 40vh; */
+  height: 80vh;
   width: 100%;
-  background-color: red;
   position: relative;
+  background: url(../img/modules.jpg);
+  background-position: center 20%;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 #modules #modules-wrapper {
@@ -146,14 +149,14 @@ header svg {
 
 #modules-wrapper .modules-item {
   width: 30%;
-  border: 10px solid green
+  border: 10px solid rgb(0, 9, 128)
 }
 
 #modules svg {
   position: absolute;
-  top: -30vh;
+  top: -260px;
   left: 0;
-  height: 100vh;
+  height: 1000px;
   width: 100%;
-  z-index: 10;
+
 }
