@@ -37,13 +37,12 @@
     </div>
   </header>
 
-
   <main>
     <div id="posts-list">
       <section>
         <header>
           <img src="pic.png" alt="picture">
-          <span>April 13</span>
+          <time>April 13</time>
           <h2>Awesome Gallery Post</h2>
           <span>Posted <time>12:00</time> Lorem ipsum dolor sit amet.</span>
         </header>
@@ -55,7 +54,7 @@
       <section>
         <header>
           <img src="pic.png" alt="picture">
-          <span>April 13</span>
+          <time>April 13</time>
           <h2>Awesome Gallery Post</h2>
           <span>Posted <time>12:00</time> Lorem ipsum dolor sit amet.</span>
         </header>
@@ -190,4 +189,28 @@
 
 
 <!-- przykład ostylowanego inputa:
-https://codepen.io/huange/pen/rbqsD -->
+https://codepen.io/huange/pen/rbqsD 
+
+1. Logo w <a> :)
+2. W formularzu wyszukiwania raczej będzie input/button do submita - nawet jak tak nie wygląda - https://codepen.io/huange/pen/rbqsD
+3. Poniższy kod może można ubrać w <header>
+
+       <img src="pic.png" alt="picture">
+      <span>April 13</span>
+      <h2>Awesome Gallery Post</h2>
+      <span>Posted <time>12:00</time> Lorem ipsum dolor sit amet.</span>
+
+4. Jak już jedziemy po całości to może <span>April 13</span> w <time>? :)
+5. <span>tags: Development, Portfolio</span> - to mógłby być też footer
+6. Może sama treść posta (do komentarzy) mogłaby być w całości article
+7. Trochę chyba nadużywasz spanów np. <span>User Name</span> - można je zastąpić albo <p> albo <div> albo <h*> - znaczniki blokowe byłby przy stylowaniu łatwiejsze do ogranięcia
+8. <label><input type="text" name="name" placeholder="name"></label> - nie potrzebujesz etykiety, jeśli nie masz tekstu opisującego pole
+9. <!- blok z prawej strony -> <div id="box-content"> - jak obok masz <main> to nie powinien to być <aside>? - Aż się prosi :)
+  10. W sidebarze z prawej brakuje searcha
+  11. <i class="fab fa-facebook-f"></i> - to raczej byłby odnośniki
+  
+  Lista:
+  1. Części wspólne jak przy single-post
+  2. Może bym się zastanowił nad wsadzeniem pojedynczego postu na liście w <article>
+
+-->
