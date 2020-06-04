@@ -35,6 +35,7 @@ h2 {
   font-size: 1.9rem;
   font-weight: 400;
   text-align: center;
+
 }
 
 section {
@@ -77,6 +78,7 @@ header #header-content {
   left: 50%;
   transform: translate(-50%, -50%);
   color: #fff;
+  text-shadow: 5px 5px 15px #000;
 }
 
 header #header-content h1 {
@@ -84,7 +86,8 @@ header #header-content h1 {
   text-align: center;
   color: #fff;
   font-weight: 700;
-  font-size: 2rem
+  font-size: 2rem;
+  text-shadow: 5px 5px 15px #000;
 }
 
 header svg {
@@ -132,6 +135,18 @@ header svg {
   background-repeat: no-repeat;
 }
 
+#expedition h2,
+#expedition>p {
+  text-shadow: 5px 5px 15px #000;
+}
+
+#expedition .container {
+  margin-top: 200px;
+  color: #fff;
+  z-index: 10;
+  position: relative;
+}
+
 /* modules */
 
 #modules {
@@ -160,8 +175,8 @@ header svg {
 #modules-wrapper .modules-item {
   flex-basis: 30%;
   height: 275px;
-  z-index: 1;
-  padding: 0 15px;
+  z-index: 2;
+  padding: 0 5px;
 
 }
 
@@ -181,14 +196,71 @@ header svg {
   left: 0;
   height: 1600px;
   width: 100%;
-  /* height: 100vw; */
-
+  z-index: 1;
 }
 
 /* leaders */
 #leaders {
-  margin: 0;
-  padding: 0;
   background: url(../img/leaders-bg.jpg);
   background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  position: relative;
+}
+
+#leaders #leaders-info {
+  position: absolute;
+  left: 50%;
+  bottom: 50px;
+  transform: translateX(-50%);
+  color: #fff;
+  background-color: #000918a6;
+  width: 50%;
+  padding: 10px 20px;
+  text-align: center;
+
+}
+
+#leaders #leaders-items {
+  display: flex;
+  justify-content: center;
+  margin: -150px auto;
+}
+
+#leaders #leaders-items .leaders-item {
+  z-index: 3;
+  flex-basis: 33%;
+  max-height: 350px;
+  padding: 5px;
+}
+
+#leaders #leaders-items .leaders-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+}
+
+/* gallery */
+#gallery {
+  margin: 0;
+  padding: 0;
+
+  ;
+}
+
+#gallery-wrapper {
+  display: flex;
+}
+
+#gallery-wrapper .gallery-item {
+  flex-basis: 25%;
+  min-height: 250px;
+}
+
+#gallery-wrapper .gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
