@@ -5,11 +5,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HTML5</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
 </head>
 
 <body>
   <header>
-    <img src="logo.png" alt="companyname">
+    <a href="">
+      <img src="logo.png" alt="companyname">
+    </a>
     <nav>
       <ul>
         <li><a href="#">Home</a></li>
@@ -21,8 +24,12 @@
         <li><a href="#">Contact</a></li>
       </ul>
     </nav>
+
     <form action="test.php">
-      <input type="text" name="search">
+      <input type="text" class="searchTerm" placeholder="What are you looking for?">
+      <button type="submit" class="searchButton">
+        <i class="fa fa-search"></i>
+      </button>
     </form>
     <div id="baner">
       <h1>Our Blog</h1>
@@ -32,31 +39,36 @@
 
   <main>
     <section>
-      <img src="pic.png" alt="picture">
-      <span>April 13</span>
-      <h2>Awesome Gallery Post</h2>
-      <span>Posted <time>12:00</time> Lorem ipsum dolor sit amet.</span>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo pariatur provident veritatis. Dolore corporis
-        amet, dolorem at quos harum corrupti. </p>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo pariatur provident veritatis. Dolore corporis
-        amet, dolorem at quos harum corrupti. </p>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo pariatur provident veritatis. Dolore corporis
-        amet, dolorem at quos harum corrupti. </p>
+      <article>
+        <header>
+          <img src="pic.png" alt="picture">
+          <time>April 13</time>
+          <h2>Awesome Gallery Post</h2>
+          <span>Posted <time>12:00</time> Lorem ipsum dolor sit amet.</span>
+        </header>
 
-      <blockquote>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, quibusdam quisquam! Suscipit dignissimos
-          possimus quo ullam autem dolore laboriosam molestiae aut? Sed alias qui iure consectetur, non repellendus
-          architecto numquam.</p>
-      </blockquote>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo pariatur provident veritatis. Dolore corporis
+          amet, dolorem at quos harum corrupti. </p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo pariatur provident veritatis. Dolore corporis
+          amet, dolorem at quos harum corrupti. </p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo pariatur provident veritatis. Dolore corporis
+          amet, dolorem at quos harum corrupti. </p>
 
-      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur saepe perspiciatis veniam officiis non
-        commodi iure, animi ipsum nobis perferendis.</p>
-      <span>tags: Development, Portfolio</span>
+        <blockquote>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, quibusdam quisquam! Suscipit dignissimos
+            possimus quo ullam autem dolore laboriosam molestiae aut? Sed alias qui iure consectetur, non repellendus
+            architecto numquam.</p>
+        </blockquote>
+
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur saepe perspiciatis veniam officiis non
+          commodi iure, animi ipsum nobis perferendis.</p>
+        <footer>tags: Development, Portfolio</footer>
+      </article>
 
       <section id="comments">
         <h3>comments</h3>
         <div class="comment-item">
-          <span>User Name</span>
+          <div>User Name</div>
           <img src="user.png" alt="user">
           <span>Posted <time>12:00</time> Lorem ipsum dolor sit amet.</span>
           <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa numquam nisi possimus officia, magni
@@ -65,7 +77,7 @@
         </div>
 
         <div class="comment-item">
-          <span>User Name</span>
+          <div>User Name</div>
           <img src="user.png" alt="user">
           <span>Posted <time>12:00</time> Lorem ipsum dolor sit amet.</span>
           <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa numquam nisi possimus officia, magni
@@ -77,16 +89,23 @@
       <section id="post-comment">
         <h3>Post a comment</h3>
         <form>
-          <label><input type="text" name="name" placeholder="name"></label>
-          <label><input type="text" name="mail" placeholder="mail"></label>
-          <label><input type="text" name="website" placeholder="website"></label>
+          <input type="text" name="name" placeholder="name">
+          <input type="text" name="mail" placeholder="mail">
+          <input type="text" name="website" placeholder="website">
           <textarea name="message" cols="30" rows="10"></textarea>
           <button type="submit">send</button>
         </form>
       </section>
     </section>
     <!-- blok z prawej strony -->
-    <div id="box-content">
+    <aside id="box-content">
+      <form action="test.php">
+        <input type="text" class="searchTerm" placeholder="What are you looking for?">
+        <button type="submit" class="searchButton">
+          <i class="fa fa-search"></i>
+        </button>
+      </form>
+
       <section id="recent-posts">
         <h3>Recent Posts</h3>
         <ul>
@@ -137,7 +156,7 @@
         <a href="#">Lorem, ipsum.</a>
         <a href="#">Lorem, ipsum.</a>
       </section>
-    </div>
+    </aside>
   </main>
 
   <footer>
@@ -147,10 +166,10 @@
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, incidunt.
       </address>
       <div id="social-media">
-        <i class="fab fa-facebook-f"></i>
-        <i class="fab fa-google-plus-g"></i>
-        <i class="fab fa-twitter"></i>
-        <i class="fab fa-twitter"></i>
+        <a href=""><i class="fab fa-facebook-f"></i></a>
+        <a href=""><i class="fab fa-google-plus-g"></i></a>
+        <a href=""><i class="fab fa-twitter"></i></a>
+        <a href=""><i class="fab fa-twitter"></i></a>
       </div>
     </div>
 
@@ -191,3 +210,7 @@
 </body>
 
 </html>
+
+
+<!-- przykład ostylowanego inputa:
+https://codepen.io/huange/pen/rbqsD -->
