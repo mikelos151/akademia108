@@ -2,26 +2,16 @@
 // Jako parametr funkcja przyjmuje n - czyli n-ty element ciągu fibbonaciego.
 
 const fibonaci = (n) => {
-  let result = 0;
-  let array = [];
-
-
-  for (let x = 0; x <= n; x++) {
-    if (x == 0) {
-      array.push(0);
-      continue
-    } else
-    if (x == 1) {
-      array.push(1);
-      continue;
-    } else if (x >= 2) {
-      result = array[x - 2] + array[x - 1];
-      array.push(result);
-    }
-    // break;
+  let array = [0, 1];
+  for (let x = 2; x <= n; x++) {
+    array.push(array[x - 2] + array[x - 1]);
   }
-  console.log(array);
+  return array[n]
 }
-fibonaci(15);
+
+console.log(fibonaci(50));
+
+
+//354224848179261915075
 
 // 0	1	1	2	3	5	8	13	21	34	55	89	144	233	377	610	987	1597	2584	4181
