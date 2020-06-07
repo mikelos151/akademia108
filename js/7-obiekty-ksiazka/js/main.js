@@ -12,7 +12,7 @@ class Ksiazka {
   }
   opiszKsiazke() {
     let stan = (!this.przeczytana ? 'nie ' : '') + 'została przeczytana';
-    return `Ksiązka ma tytuł ${this.tytul}, autorem jest ${this.autor} i ${stan}`;
+    return `Ksiązka ma tytuł "${this.tytul}", autorem jest ${this.autor} i ${stan}`;
   }
 }
 
@@ -29,8 +29,7 @@ const iloscPrzeczytanych = (tablicaObiektow) => {
     console.log(ksiazki[element].opiszKsiazke());
     if (ksiazki[element].przeczytana) iloscPrzeczytanych++;
   }
-  console.log(`\r\nIlość książek przeczytanych: ${iloscPrzeczytanych}`);
-
+  return iloscPrzeczytanych;
 }
 
-iloscPrzeczytanych(ksiazki);
+console.log(`Ilość przeczytanych książek: ` + iloscPrzeczytanych(ksiazki));
