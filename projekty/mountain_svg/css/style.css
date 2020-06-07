@@ -51,7 +51,7 @@ p {
   background-color: #484f6b;
   padding: 8px 25px;
   text-transform: uppercase;
-  color: #bdbec2;
+  color: #ffffff;
   border: 1px solid #616a8f;
   text-decoration: none;
   font-weight: 400;
@@ -71,6 +71,16 @@ header {
   background-position: 50% 80%;
   background-size: cover;
 }
+
+.logo {
+  width: 150px;
+  margin: 0 auto;
+}
+
+.logo img {
+  width: 100%;
+}
+
 
 header #header-content {
   position: absolute;
