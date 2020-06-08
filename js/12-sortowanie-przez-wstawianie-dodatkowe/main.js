@@ -7,20 +7,17 @@
 // - zastosuj pętlę w pętli :)
 // [3,2,1,0, 34, 2
 const insertSort = (array) => {
-  let next;
-  let prev;
-  let counter = 0;
+  let actual;
   for (let x = 1; x < array.length; x++) {
+
     for (let y = x; y > 0; y--) {
       if (array[y] < array[y - 1]) {
         actual = array[y];
         array[y] = array[y - 1];
-        array[y - 1] = actual
+        array[y - 1] = actual;
       }
-
     }
   }
-
   console.log(array);
 }
 
