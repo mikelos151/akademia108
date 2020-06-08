@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   sodipodi:docname="top_bg.svg"
+   inkscape:version="1.0 (4035a4fb49, 2020-05-01)"
+   id="svg228"
+   version="1.1"
+   viewBox="0 0 264.58333 297"
+   height="1122.5197"
+   width="1000">
+  <defs
+     id="defs222" />
+  <sodipodi:namedview
+     inkscape:window-maximized="1"
+     inkscape:window-y="-8"
+     inkscape:window-x="-8"
+     inkscape:window-height="837"
+     inkscape:window-width="1600"
+     units="px"
+     showgrid="false"
+     inkscape:document-rotation="0"
+     inkscape:current-layer="layer1"
+     inkscape:document-units="px"
+     inkscape:cy="191.07158"
+     inkscape:cx="194.5229"
+     inkscape:zoom="1.4"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     borderopacity="1.0"
+     bordercolor="#666666"
+     pagecolor="#ffffff"
+     id="base" />
+  <metadata
+     id="metadata225">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     id="layer1"
+     inkscape:groupmode="layer"
+     inkscape:label="Warstwa 1">
+    <path
+       id="path354"
+       d="M -0.37797619,37.419643 264.58334,123.22024 264.20536,0.37797619 0,-0.37797619 Z"
+       style="fill:none;stroke:none;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+    <path
+       sodipodi:nodetypes="ccsscsscsscc"
+       id="path356"
+       d="M 133.05047,78.874531 0.15119048,36.361309 0.38152109,26.411456 C 0.46730886,22.705584 0.53561059,15.841832 0.53333267,9.7340313 L 0.52916667,-1.4363095 81.514037,-0.94316921 c 43.985373,0.26783963 103.213703,0.34176553 131.617133,0.47093062 l 51.64261,0.2348456 0.2591,35.57777299 c 0.1425,19.567774 0.20556,46.982252 0.14012,60.921058 l -0.11896,25.343282 z"
+       style="fill:#8393a6;fill-opacity:1;stroke:none;stroke-width:0.377976" />
+  </g>
+</svg>
