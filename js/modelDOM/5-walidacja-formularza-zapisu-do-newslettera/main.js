@@ -12,12 +12,12 @@ const validate = (e) => {
   !email.value.includes("@") ? errors.push("Wpisz poprawny adres e-mail") : null;
   !checkboxes[1].checked ? errors.push("Zaznacz zgodę marketingową nr. 1") : null;
 
-  //wyświetl błędy
-  console.log(errors);
 
+  document.querySelector("ul") !== null ? document.querySelector("ul").remove() : null;
+
+  //wyświetl błędy
   if (errors.length > 0) {
     //czysczenie błędów 
-    document.querySelector("ul") !== null ? document.querySelector("ul").remove() : null;
     const ulErrorList = document.createElement("ul");
     document.body.insertBefore(ulErrorList, form);
 
