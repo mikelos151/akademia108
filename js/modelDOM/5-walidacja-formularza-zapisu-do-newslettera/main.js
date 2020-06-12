@@ -9,7 +9,7 @@ const validate = (e) => {
   errors.length = 0; //czyszczenie błędów
   firstLastName.value.length == 0 ? errors.push("Wpisz imię i nazwisko") : null;
   email.value.length == 0 ? errors.push("Wpisz e-mail") : null;
-  !email.value.includes("@") ? errors.push("Wpisz poprawny adres e-mail") : null;
+  !email.value.includes("@") && email.value.length > 0 ? errors.push("Wpisz poprawny adres e-mail") : null;
   !checkboxes[1].checked ? errors.push("Zaznacz zgodę marketingową nr. 1") : null;
 
 
@@ -17,7 +17,6 @@ const validate = (e) => {
 
   //wyświetl błędy
   if (errors.length > 0) {
-    //czysczenie błędów 
     const ulErrorList = document.createElement("ul");
     document.body.insertBefore(ulErrorList, form);
 
