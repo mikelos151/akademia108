@@ -7,8 +7,8 @@ const errors = [];
 const validate = (e) => {
   e.preventDefault();
   errors.length = 0; //czyszczenie błędów
-  firstLastName.value.length == 0 ? errors.push("Wpisz imię i nazwisko") : null;
-  email.value.length == 0 ? errors.push("Wpisz e-mail") : null;
+  firstLastName.value.trim() === "" ? errors.push("Wpisz imię i nazwisko") : null;
+  email.value.trim() === "" ? errors.push("Wpisz e-mail") : null;
   !email.value.includes("@") && email.value.length > 0 ? errors.push("Wpisz poprawny adres e-mail") : null;
   !checkboxes[1].checked ? errors.push("Zaznacz zgodę marketingową nr. 1") : null;
 
@@ -30,6 +30,9 @@ const validate = (e) => {
 }
 
 const checkUncheck = () => {
+  //event.target.checked
+  // checkboxes[x].checked = event.target.checked;
+
   for (let x = 1; x < checkboxes.length; x++) {
     if (checkboxes[0].checked) {
       checkboxes[x].checked = true;
