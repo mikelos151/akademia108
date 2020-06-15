@@ -5,7 +5,7 @@
 h2 {
   text-transform: uppercase;
   font-size: 15px;
-  margin: 0 auto;
+  margin: 0px auto;
   width: 200px;
 }
 
@@ -14,15 +14,13 @@ h2 {
   flex-direction: column;
   max-width: 1200px;
   margin: 0 auto;
-
 }
 
 #title {
   display: flex;
-  max-width: 1200px;
+  min-width: 1200px;
   background-color: aliceblue;
   text-transform: uppercase;
-
 }
 
 .tytul.uczen,
@@ -42,12 +40,13 @@ h2 {
 input,
 .srednia {
   display: block;
-  /* flex-shrink: 1; */
   flex-grow: 1;
   width: 100px;
   min-width: 100px;
   text-align: center;
+  /* margin-bottom: 1px; */
 }
+
 
 .zajecia-dodatkowe {
   width: 300px;
@@ -56,25 +55,50 @@ input,
 span.tytul.uczen,
 span.uczen {
   min-width: 200px;
-
 }
 
-#uczniowie>div[id^='uczen']:nth-child(odd)>span {
-  background-color: rgba(42, 42, 42, 0.788);
-
-}
 
 #uczniowie>div[id^='uczen'] {
   display: flex;
-  max-width: 1200px;
+  min-width: 1200px;
   background-color: #1b1b1b;
   color: #fff;
   text-align: center;
   text-transform: uppercase;
   font-size: 10px;
-  /* justify-content: space-evenly; */
+  /* border-bottom: 1px solid #343434; */
+}
+
+#uczniowie>div[id^='uczen']:hover>input[type=number] {
+  font-weight: bold;
 }
 
 #uczniowie>div[id^='uczen']>span {
   padding: 5px 0;
+}
+
+button {
+  padding: 5px 15px;
+  background-color: #1b1b1b;
+  width: 200px;
+
+  border-radius: 5px;
+  border: 0;
+  margin: 10px 0;
+  color: #fff;
+  margin-left: auto;
+}
+
+button:hover {
+  background-color: rgba(42, 42, 42, 0.788);
+  cursor: pointer;
+
+}
+
+.green {
+  background-color: green !important;
+}
+
+.red {
+  background-color: red !important;
 }
