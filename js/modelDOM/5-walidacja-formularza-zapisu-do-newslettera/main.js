@@ -14,7 +14,6 @@ const validate = (e) => {
 
 
   document.querySelector("ul") !== null ? document.querySelector("ul").remove() : null;
-
   //wyświetl błędy
   if (errors.length > 0) {
     const ulErrorList = document.createElement("ul");
