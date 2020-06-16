@@ -1,0 +1,76 @@
+* {
+  box-sizing: border-box;
+}
+
+#kalkulator {
+  display: flex;
+  margin: 0 auto;
+  width: 480px;
+  height: 650px;
+  background-color: rgb(255, 196, 0);
+  flex-wrap: wrap;
+  padding: 10px 70px 40px 10px;
+
+
+}
+
+#kalkulator>div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 30px;
+  width: 90px;
+  height: 90px;
+  margin: 5px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#kalkulator>div:hover {
+  background-color: rgb(252, 82, 15);
+}
+
+div[id^="num"],
+#kropka {
+  background-color: black;
+}
+
+#del {
+  background-color: rgb(15, 165, 252);
+  flex-basis: 190px;
+}
+
+#num-0 {
+  flex-basis: 190px;
+}
+
+#procent,
+#plus,
+#minus,
+#mnozenie,
+#dzielenie,
+#result {
+  background-color: rgb(109, 109, 109);
+}
+
+#result {
+  flex-basis: 100%;
+  position: relative;
+
+}
+
+#rownasie {
+  background-color: rgb(2, 177, 2);
+}
+
+#dzialanie {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  font-size: 13px;
+  text-align: right;
+  z-index: 10;
+  overflow: hidden;
+}
