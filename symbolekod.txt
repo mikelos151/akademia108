@@ -1,0 +1,105 @@
+
+let num = 108; //Number(108)
+let str = 'string'; //String('string')
+let bool = true; //Boolean(true)
+
+let symbol = Symbol(); //423742948728437332349343432498738274334827349
+
+// console.log('' + Symbol());
+console.log(symbol);
+console.log(typeof symbol);
+console.log(symbol.toString());
+
+let symbolLabel = Symbol('a108');
+console.log(symbolLabel);
+console.log(symbolLabel.description);
+console.log(`--------------------------------`);
+
+const sym1 = Symbol();
+const sym2 = Symbol();
+
+console.log(sym1, sym2);
+console.log(sym1 === sym2);
+
+
+const symA = Symbol('secret');
+const symB = Symbol('secret');
+
+console.log(symA, symB);
+console.log(symA === symB);
+console.log(`--------------------------------`);
+
+
+const idSym = Symbol('id');
+
+let user = {
+    id: 1234,
+    name: 'Hans',
+    city: 'Warsaw',
+    age: 20,
+    idSym: 98765,
+    [idSym]: 987654321,
+}
+
+// user[idSym] = 98765;
+
+console.log(user);
+console.log(user[idSym]);
+console.log(`--------------------------------`);
+
+
+Object.keys(user).forEach((key) => {
+    console.log(key);
+})
+console.log(`--------------------------------`);
+for (const key in user) {
+    console.log(`Key: ${key}, Value: ${user[key]}`);
+}
+console.log(`--------------------------------`);
+Object.getOwnPropertyNames(user).forEach((key) => {
+    console.log(key);
+});
+console.log(`--------------------------------`);
+console.log(JSON.stringify(user));
+console.log(`--------------------------------`);
+
+
+
+Reflect.ownKeys(user).forEach((key) => {
+    console.log(key);
+});
+console.log(`--------------------------------`);
+const manId = Symbol('manId');
+let man = {
+    name: 'Hans',
+    [manId]: 108018018,
+}
+let copyOfMan = Object.assign({}, man);
+console.log(copyOfMan);
+console.log(copyOfMan[manId]);
+copyOfMan[manId] = 108;
+console.log(man[manId] === copyOfMan[manId]);
+console.log(`--------------------------------`);
+Object.getOwnPropertySymbols(man).forEach((key) => {
+    console.log(copyOfMan[key]);
+});
+console.log(`--------------------------------`);
+
+
+
+const symX = Symbol.for('global-symbol');
+const symY = Symbol.for('global-symbol');
+
+console.log(symX === symY);
+
+console.log(Symbol.keyFor(symX));
+
+const symbolLocal = Symbol('superSymbol');
+const symbolGlobal = Symbol.for('superSymbol');
+
+console.log(Symbol.keyFor(symbolLocal));
+console.log(Symbol.keyFor(symbolGlobal));
+console.log(Symbol.keyFor(symbolLocal) === undefined);
+console.log(Symbol.keyFor(symbolGlobal) === 'superSymbol');
+
+console.log(Symbol.for(Symbol.keyFor(symbolGlobal)) === Symbol.for('superSymbol'));
