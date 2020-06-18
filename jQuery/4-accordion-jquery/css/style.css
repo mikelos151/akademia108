@@ -41,3 +41,7 @@ body {
 .accordion-content {
     display: none;
 }
+
+.open .accordion-title::before {
+    content: '-'
+}
