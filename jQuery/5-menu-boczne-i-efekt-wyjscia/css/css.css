@@ -40,7 +40,7 @@ nav {
 }
 
 #left-nav.hide-menu {
-  width: 0px;
+  transform: scaleX(0);
 }
 
 #left-nav li a:hover {
