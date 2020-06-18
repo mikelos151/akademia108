@@ -1,5 +1,6 @@
 $('document').ready(function () {
   $("#hamburger").on("click", function () {
+    //lepiej dodać toggle clas
     if ($('#left-nav').hasClass('hide-menu')) {
       $('#left-nav').removeClass('hide-menu')
     } else
@@ -9,7 +10,7 @@ $('document').ready(function () {
 
   $('a').on("click", function (e) {
     e.preventDefault();
-    $('nav').animate({
+    $('body').animate({
         opacity: 0
       }, 1000,
       function () {
