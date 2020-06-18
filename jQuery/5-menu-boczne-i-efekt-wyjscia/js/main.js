@@ -12,7 +12,7 @@ $('document').ready(function () {
     e.preventDefault();
     $('body').animate({
         opacity: 0
-      }, 1000,
+      }, 2000,
       function () {
         window.location.href = e.target.href;
       })
