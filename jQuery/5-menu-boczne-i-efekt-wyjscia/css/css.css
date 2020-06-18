@@ -24,7 +24,7 @@ nav {
   padding: 0;
   padding-top: 30px;
   overflow: hidden;
-  transition: width .3s ease-out
+  transition: transform .3s ease-out
 }
 
 #left-nav li a {
@@ -40,7 +40,7 @@ nav {
 }
 
 #left-nav.hide-menu {
-  transform: scaleX(0);
+  transform: translate(-200px);
 }
 
 #left-nav li a:hover {
