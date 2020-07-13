@@ -1,0 +1,81 @@
+.appointment {
+  background-color: $primary;
+  position: relative;
+
+  .appointment-container {
+    max-width: 1140px;
+    margin: 0 auto;
+
+    .appointment-img {
+      position: absolute;
+      left: 0;
+      height: 100%;
+      background-image: url(../img/contact-bg.jpg);
+      background-position: center;
+      background-size: cover;
+      width: 40%;
+    }
+
+    .appointment-form {
+      min-width: 320px;
+
+      width: 60%;
+      display: flex;
+      flex-wrap: wrap;
+      padding: 60px 0 60px 20px;
+      margin-left: 40%;
+      justify-content: space-between;
+
+      button {
+        font-weight: 700;
+        margin: 40px 0px;
+      }
+    }
+
+  }
+
+  .appointment-message-info {
+    color: red;
+    flex-basis: 100%;
+    display: none;
+    text-align: center;
+    background-color: $light;
+    padding: 5px 10px;
+  }
+}
+
+
+@media (max-width:$large-device) {
+  .appointment {
+    .appointment-container {
+      .appointment-form {
+        padding: 50px 10%;
+        margin-left: 0;
+        width: 100%;
+
+        &>* {
+          flex-basis: 100%;
+        }
+
+        button {
+          flex-basis: 50%;
+          margin: 50px auto;
+        }
+      }
+    }
+
+    .appointment-container {
+      .appointment-img {
+        display: none;
+      }
+    }
+  }
+}
+
+@media (max-width:$small-device) {
+  .appointment-message-info {
+    max-width: 300px;
+    font-size: 0.85rem;
+  }
+
+}

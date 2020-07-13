@@ -1,0 +1,99 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body,
+p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+}
+
+p {
+  letter-spacing: 1px;
+  font-weight: 300;
+  line-height: 1.8rem;
+  padding: 20px 0;
+}
+
+.first-paragraph {
+  margin: 0 auto;
+  width: 80%;
+}
+
+.banner,
+.about figcaption,
+h1,
+h2,
+h3,
+h4 {
+  font-family: 'Bellota', cursive;
+  color: $secondary;
+  padding: 20px 0;
+}
+
+h2 {
+  font-size: 2.625rem;
+}
+
+h1 {
+  font-size: 3.125rem;
+
+}
+
+h4 {
+  font-size: 1.2rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+section {
+  min-height: 50vh;
+  padding: 60px 10px;
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+.visibility {
+  display: block !important;
+  transform: translateX(0);
+  transition: transform 0.3s ease-out;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.show-section {
+  opacity: 1 !important;
+  transition: 1s;
+
+}
+
+@media (max-width:$large-device) {
+  .first-paragraph {
+    width: 100%;
+  }
+
+}
+
+@media (max-width:$small-device) {
+  section {
+    padding: 30px 10px;
+  }
+
+  h2 {
+    font-size: 2rem;
+    margin: 0px 0;
+    padding: 0;
+  }
+}

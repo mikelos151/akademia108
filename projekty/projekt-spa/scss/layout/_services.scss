@@ -1,0 +1,65 @@
+.service {
+  display: flex;
+
+  .s-item {
+    position: relative;
+
+    flex-basis: 33.333%;
+    max-height: 350px;
+
+    &>img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .s-item-hover {
+      opacity: 0;
+
+      &>img {
+        height: 30px;
+      }
+    }
+
+    &:hover .s-item-hover {
+      margin: 0px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: $primary;
+      opacity: 0.9;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      transition: all 0.5s;
+
+      &>* {
+        color: $light;
+      }
+    }
+  }
+}
+
+
+@media (max-width:$large-device) {
+  .service {
+    flex-wrap: wrap;
+
+    .s-item {
+      flex-basis: 50%;
+    }
+  }
+}
+
+@media (max-width:$small-device) {
+  .service {
+    flex-wrap: wrap;
+
+    .s-item {
+      flex-basis: 100%;
+    }
+  }
+}

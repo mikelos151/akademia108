@@ -1,0 +1,23 @@
+@import 'utils/variables';
+@import 'utils/fonts';
+
+// @import 'base/normalize';
+@import 'base/global';
+
+
+@import 'layout/header';
+@import 'layout/banner';
+@import 'layout/about';
+@import 'layout/contact';
+@import 'layout/services';
+@import 'layout/procedures';
+@import 'layout/team';
+@import 'layout/appointment';
+@import 'layout/blog';
+@import 'layout/footer';
+
+@import 'components/button';
+@import 'components/social-icon';
+@import 'components/form';
+@import 'components/hamburger';
+@import 'components/messages';

@@ -1,0 +1,185 @@
+header {
+  min-height: 70vh;
+  position: relative;
+
+  .nav-wrapper {
+    background-color: $light;
+    position: fixed;
+    width: 100%;
+    height: 90px;
+    z-index: 1;
+  }
+
+  nav {
+    display: block;
+    top: 0;
+    width: 100%;
+    background-color: $light;
+    max-width: 1140px;
+    margin: 0 auto;
+
+  }
+
+  .container {
+    display: flex;
+    max-width: 1140px;
+    margin: 0 auto;
+
+  }
+
+  .logo-nav {
+    margin-top: 10px;
+    width: 80px;
+    padding-left: 0px;
+    margin-right: 50px;
+  }
+
+  .logo {
+    display: none;
+    position: absolute;
+    margin-top: 10px;
+    width: 80px;
+    padding-left: 20px;
+    margin-right: 50px;
+  }
+
+  .bg-image {
+    position: absolute;
+    top: 400px;
+    left: -55px;
+    width: 11%;
+  }
+
+  .bg-image-right {
+    position: absolute;
+    top: 0px;
+    right: 0;
+    z-index: 2;
+    width: 40%;
+
+    img {
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+
+
+  nav {
+    display: flex;
+    z-index: 3;
+
+    ul {
+      display: flex;
+      align-items: center;
+      padding: 0;
+
+      li {
+        list-style: none;
+        text-transform: uppercase;
+        height: 50px;
+        padding: 20px 20px;
+        text-decoration: none;
+        font-size: 1.06rem;
+
+        a {
+
+          text-align: center;
+          display: block;
+          color: $secondary;
+          text-decoration: none;
+        }
+
+        a:hover {
+          color: $primary;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width:$extra-large-device) {
+  header {
+
+    .banner {
+      .banner-content {
+        padding: 20px 10px;
+      }
+    }
+  }
+}
+
+@media (max-width:$large-device) {
+  header {
+    height: 50vh;
+    margin-bottom: 50px;
+    ;
+
+    .hamburger {
+      display: block;
+    }
+
+    nav {
+      transform: translateX(110%);
+      position: absolute;
+      background-color: $primary;
+      flex-direction: column;
+      width: 80%;
+      height: auto;
+      right: 0px;
+      padding: 30px 0px;
+      box-shadow: 0 0 30px -10px $dark;
+
+      ul {
+        flex-direction: column;
+        padding: 0;
+        width: 100%;
+
+        li {
+          width: 100%;
+
+          a {
+            text-align: right;
+            color: #fff;
+            line-height: 50px;
+            transition: margin 0.5s;
+
+            &:hover {
+              margin-right: 15px;
+              color: $light
+            }
+          }
+        }
+      }
+
+    }
+
+    .logo {
+      display: block;
+    }
+
+    .logo-nav {
+      display: none;
+    }
+
+    nav {
+      justify-content: center;
+    }
+
+    .bg-image-right {
+      display: none;
+    }
+
+    .banner {
+      .banner-content {
+        text-align: center;
+        width: 100%;
+
+        p {
+          text-align: center;
+          width: 100%;
+          padding: 10px 50px;
+        }
+      }
+    }
+  }
+}

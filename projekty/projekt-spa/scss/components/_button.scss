@@ -1,0 +1,77 @@
+.btn {
+  min-width: 170px;
+  background-color: $primary;
+  color: $light;
+  padding: 15px 33px;
+  text-decoration: none;
+  outline: none;
+  line-height: 12px;
+  cursor: pointer;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: 0.3s;
+}
+
+.btn-rectangle {
+  margin-right: 20px;
+  text-transform: capitalize;
+  border: 1px solid transparent;
+
+  i {
+    margin-left: 10px;
+  }
+}
+
+.btn-rectangle:hover {
+  background-color: $light;
+  color: $primary;
+  border: 1px solid $primary;
+}
+
+.btn-rounded {
+  border-radius: 50px;
+  padding: 15px 33px;
+  border: 1px solid transparent;
+}
+
+.btn-rounded:hover {
+  background-color: $light;
+  color: $primary;
+  border: 1px solid $primary;
+}
+
+.btn-dark {
+  background-color: $dark;
+  color: $light;
+}
+
+.btn-dark:hover {
+  background-color: $light;
+  color: $dark;
+  border: 1px solid $dark;
+}
+
+.btn-negative {
+  color: $secondary;
+  background-color: $light;
+  border: 1px solid transparent;
+  transition: 0.3s;
+
+  &:hover {
+    background-color: $primary;
+    color: $light;
+    border: 1px solid $light
+  }
+}
+
+@media (max-width:$small-device) {
+  .btn {
+    min-width: 100%;
+  }
+
+  .btn-rectangle {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
